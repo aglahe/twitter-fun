@@ -11,7 +11,7 @@ KAFKA_CONF_FILE = 'conf/kafka.yml'
 
 def main():
     #Twitter Setup
-    twitter_tokens = yaml.safe_load(open(os.path.expanduser('~') + TWITTER_AUTH_FILE))
+    twitter_tokens = yaml.safe_load(open(TWITTER_AUTH_FILE))
     client = StreamClient(twitter_tokens['consumer_key'], twitter_tokens['consumer_secret'],twitter_tokens['access_token'], twitter_tokens['access_secret'])
     resource = client.stream.statuses.filter.post(track='java')
 
