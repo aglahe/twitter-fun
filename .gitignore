@@ -49,8 +49,8 @@ target/
 Icon?
 ehthumbs.db
 Thumbs.db
-/.idea/
-/*.iml
+**/.idea/
+**/*.iml
 
 # Twitter Auth info
 conf/twitter.yml
